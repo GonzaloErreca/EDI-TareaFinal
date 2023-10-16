@@ -24,3 +24,16 @@ function random_MAC_adress() {
 
   return direccionMAC;
 }
+function calcular(operacion, a, b) {
+  if (operacion === 'sumar') {
+    return a + b;
+  } else if (operacion === 'restar') {
+    return a - b;
+  } else {
+    return 'Operación no válida';
+  }
+}
+
+// Ejemplos de uso
+console.log('Suma: ' + calcular('sumar', 5, 3));    // Suma: 8
+console.log('Resta: ' + calcular('restar', 10, 7));  // Resta: 3
